@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto curso CSS GRID</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="./img/LOGO.jpg" alt="Logo" />
+        </a>
+        <ul>
+          <a href="#inicio"><li>Inicio</li></a>
+          <a href="#galeria"><li>Galeria</li></a>
+          <a href="#aves"><li>Aves</li></a>
+        </ul>
+      </nav>
+    </header>
+    <!-- seccion 1 -->
+    <section class="seccion1" id="inicio">
+      <div class="seccion1-contenedor">
+        <h1>Maravillas Naturales</h1>
+        <p class="subtitle">
+          Encontraremos y nos maravillaremos con todas las cosas tan hermosas
+          que podemos encontrar en la naturaleza.
+        </p>
+      </div>
+      <img src="./img/paisajenatural.jpg" alt="Paisaje natural" class="seccion1-img"/>
+    </section>
+
+    <!-- seccion 2 -->
+    <section class="seccion2" id="galeria">
+      <h2>Galeria de Imagenes</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="./img/img1.jfif" alt="Paisaje con flores" class="gallery-img"/>
+          <h3 class="gallery-subtitle">Paisajes</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img2.jfif" alt="Paisaje con sol" class="gallery-img"/>
+          <h3 class="gallery-subtitle">Paisajes</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img3.jfif" alt="Paisaje verde" class="gallery-img"/>
+          <h3 class="gallery-subtitle">Paisajes</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img4.jfif" alt="Cielo" class="gallery-img"/>
+          <h3 class="gallery-subtitle">Paisajes</h3>
+        </div>
+      </div>
+    </section>
+<!-- seccion 3 -->
+    <section class="seccion3" id="aves">
+      <h4 class="menu-title">Aves</h4>
+      <div class="menu-grid">
+        <div class="menu-grid-item">
+          <img src="./img/p7.jfif" alt="Pajaro de colores">
+        </div>
+        <div class="menu-grid-item">
+          <img src="./img/p3.jpg" alt="paloma">
+        </div>
+        <div class="menu-grid-item">
+          <img src="./img/p4.jpg" alt="Pajaro amarillo">
+        </div>
+        <div class="menu-grid-item">
+          <img src="./img/p6.jfif" alt="Tres pajaritos">
+        </div>
+        <div class="menu-grid-item">
+          <img src="./img/p9.jpg" alt="Pajaros novios">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

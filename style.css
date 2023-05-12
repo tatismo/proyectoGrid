@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.cabecera {
+  width: 100%;
+  height: 100px;
+  background-color: #01033c;
+  box-shadow: 0 4px 5px rgb(241, 4, 162);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.logo img {
+  width: 120%;
+  height: 100px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+li {
+  list-style: none;
+  margin-right: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+li:hover {
+  background-color: fuchsia;
+  padding: 20px;
+  border-radius: 8px;
+}
+/* seccion 1 */
+.seccion1 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-auto-rows: 400px;
+}
+.seccion1-contenedor {
+  align-self: center;
+}
+.seccion1-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+.seccion1-contenedor h1 {
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: #070b92;
+  text-shadow: 1px 1px 2px #01033c;
+}
+.seccion1-contenedor p {
+  color: #333;
+}
+/* seccion 2 */
+.seccion2{
+  width: 100%;
+  height: 90%;
+  margin: 100px 0;
+  padding: 40px;
+}
+.seccion2 h2{
+  color: #070b92;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+.gallery-item{
+  position: relative;
+}
+.gallery-subtitle{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(#e3e4f4, #2b31f1);
+  width: 100%;
+}
+.gallery-item:nth-child(4){
+  grid-column-start: span 2;
+}
+.gallery-item:nth-child(3){
+  grid-row-start: span 2;
+}
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* seccion 3 */
+.seccion3{
+  margin-bottom: 200px;
+}
+.menu-title{
+  font-size: 2rem;
+  color: #070b92;
+  text-shadow: 3px 0px 0 rgba(107, 213, 243, 0.991);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.menu-grid{
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 100px));
+}
+.menu-grid-item{
+  background-color: #4c44e381;
+  padding: 15px;
+  border-radius: 40%;
+  box-shadow: 2px 3px 5px;
+}
+.menu-grid-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 40%;
+}
